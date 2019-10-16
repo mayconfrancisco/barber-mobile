@@ -60,6 +60,8 @@ criar/configurar jsconfig.json <br/>
 
 yarn add styles-component
 
+yarn add prop-types
+
 yarn add react-navigation react-native-gesture-handler react-native-reanimated
 //lidam com navegacao e possui componentes específicos para cada plataforma (android/ios), gestos de navegacao e animacoes na navegacao, nesta ordem
 ANDROID configurar o gesture handler no MainActivity.java
@@ -85,6 +87,17 @@ ReactNative >= 0.60 necessario pod install - para tal eh preciso o cocoa-pods - 
 ReactNative <= 0.60 react-native link react-native-linear-gradient <br/>
 caso de pau - run-ios novamente ou rebuild no xcode caso esteja rodando no aparelho físico
 
+yarn add react-native-vector-icons //lib de icones para o reactnative
+react-native link react-native-vector-icons
+AFIM DE EVITAR OS PROBLEMAS DE DUPLICACAO DE FONTES E TER QUE IR NO XCODE REMOVER OS DUPLICADOS USE O NATIVE-BASE
+yarn add native-base
+react-native link
+e usa assim:
+import { Icon } from 'native-base';
+<Icon type="MaterialIcons" name="add" style={{ fontSize: 20, color: '#fff' }} />
+
+
+
 
 
 @@@@@@@@@@@@@@@@@@
@@ -99,20 +112,8 @@ criar o src/config/reactotron.js com as config - --DEV-- configurar no .eslintrc
 
 
 
-
-yarn add react-native-vector-icons //lib de icones para o reactnative
-react-native link react-native-vector-icons
-AFIM DE EVITAR OS PROBLEMAS DE DUPLICACAO DE FONTES E TER QUE IR NO XCODE REMOVER OS DUPLICADOS USE O NATIVE-BASE
-yarn add native-base
-react-native link
-e usa assim:
-import { Icon } from 'native-base';
-<Icon type="MaterialIcons" name="add" style={{ fontSize: 20, color: '#fff' }} />
-
 yarn add @react-native-community/async-storage
 IOS acesse a pasta ios e rode o pod install
 ANDROID só rodar novamente react-native run-android
-
-yarn add prop-types
 
 yarn add react-native-webview

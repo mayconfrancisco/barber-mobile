@@ -10,10 +10,10 @@ Projeto desenvolvido no Bootcamp da Rocketseat
 
 **`yarn`** _para baixar as dependências_
 
-**`react-native run-ios`** __para rodar no ios__
+**`react-native run-ios`** _para rodar no ios_
 
-**`react-native run-android`** __para rodar no android__
+**`react-native run-android`** _para rodar no android_
 
-**`react-native run-ios --simulator="iPhone 6"`** __para rodar em um simulador específico__
+**`react-native run-ios --simulator="iPhone 6"`** _para rodar em um simulador específico_
 
-__A aplicação de backend - [BarberServer](https://github.com/mayconfrancisco/barber-server) - deve estar rodando__
+_A aplicação de backend - [BarberServer](https://github.com/mayconfrancisco/barber-server) - deve estar rodando_
