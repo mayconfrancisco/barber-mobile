@@ -99,16 +99,34 @@ import { Icon } from 'native-base';
 
 
 
+yarn add reactotron-react-native reactotron-redux reactotron-redux-saga
+criar o src/config/reactotron.js com as config - --DEV-- configurar no .eslintrc.js no globals/readonly
+
+
+yarn add react-redux redux redux-saga redux-persist immer
+
+redux-persist > = v6 <br/>
+import AsyncStorage from '@react-native-community/async-storage';  <br/>
+const persistConfig = {
+  //...
+  storage: AsyncStorage,
+}
+
+
+yarn add axios <br/>
+// ANDROID <br/>
+  // 10.0.2.2 - para o emulador do android studio <br/>
+  // 10.0.3.2 - para o emulador genimotion <br/>
+  // IP da maquina - para dispositivos físicos <br/>
+// iOS - funciona no localhost
+
+
+
 
 @@@@@@@@@@@@@@@@@@
 
 
 
-
-
-
-yarn add reactotron-react-native
-criar o src/config/reactotron.js com as config - --DEV-- configurar no .eslintrc.js no globals/readonly
 
 
 
