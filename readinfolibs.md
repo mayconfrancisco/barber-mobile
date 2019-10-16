@@ -112,6 +112,10 @@ const persistConfig = {
   storage: AsyncStorage,
 }
 
+yarn add @react-native-community/async-storage
+IOS acesse a pasta ios e rode o pod install
+ANDROID só rodar novamente react-native run-android
+
 
 yarn add axios <br/>
 // ANDROID <br/>
@@ -126,12 +130,5 @@ yarn add axios <br/>
 @@@@@@@@@@@@@@@@@@
 
 
-
-
-
-
-yarn add @react-native-community/async-storage
-IOS acesse a pasta ios e rode o pod install
-ANDROID só rodar novamente react-native run-android
 
 yarn add react-native-webview
