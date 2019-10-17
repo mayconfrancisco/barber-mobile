@@ -4,6 +4,7 @@ import {Icon} from 'native-base';
 import PropTypes from 'prop-types';
 
 import {updateProfileRequest} from '~/store/modules/user/actions';
+import {signOut} from '~/store/modules/auth/actions';
 
 import Background from '~/components/Background';
 import {
@@ -13,6 +14,7 @@ import {
   Form,
   FormInput,
   SubmitButton,
+  LogoutButton,
 } from './styles';
 
 export default function Profile() {
@@ -46,6 +48,10 @@ export default function Profile() {
         confirmPassword,
       }),
     );
+  }
+
+  function handleLogout() {
+    dispatch(signOut());
   }
 
   return (
@@ -114,6 +120,7 @@ export default function Profile() {
           />
 
           <SubmitButton onPress={handleSubmit}>Atualizar perfil</SubmitButton>
+          <LogoutButton onPress={handleLogout}>Sair do baber</LogoutButton>
         </Form>
       </Container>
     </Background>
