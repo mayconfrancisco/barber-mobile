@@ -70,6 +70,7 @@ IOS- ReactNative >= 0.60 - acessar a pasta ios e rodar o pod install para instal
 criar arquivo de src/routes.js
 
 yarn add react-navigation-stack //caso use o stack navigator - apartir do react-navigation 4 os navigators migraram para um novo repo
+yarn add react-navigation-tabs //caso use o tabNavigator
 
 Tipos de navegacao por rotas - Para mais detalhes consulte documentacao
 createStackNavigator - cria uma pilha de telas e permite voltar para anterior
