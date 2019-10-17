@@ -3,13 +3,16 @@ import {Text} from 'react-native';
 import {Icon} from 'native-base';
 import PropTypes from 'prop-types';
 
+import Background from '~/components/Background';
 import {Container} from './styles';
 
 export default function Profile() {
   return (
-    <Container>
-      <Text>Profile</Text>
-    </Container>
+    <Background>
+      <Container>
+        <Text>Profile</Text>
+      </Container>
+    </Background>
   );
 }
 
