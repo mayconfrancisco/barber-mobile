@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Icon} from 'native-base';
-import PropTypes from 'prop-types';
+import {withNavigationFocus} from 'react-navigation';
 
 import api from '~/services/api';
 
@@ -8,18 +8,19 @@ import Background from '~/components/Background';
 import Appointment from '~/components/Appointment';
 import {Container, Title, List} from './styles';
 
-export default function Dashboard() {
+function Dashboard({isFocused}) {
   const [appointments, setAppointments] = useState([]);
 
+  async function loadAppointments() {
+    const response = await api.get('/appointments');
+    setAppointments(response.data);
+  }
+
   useEffect(() => {
-    async function loadAppointments() {
-      const response = await api.get('/appointments');
-
-      setAppointments(response.data);
+    if (isFocused) {
+      loadAppointments();
     }
-
-    loadAppointments();
-  }, []);
+  }, [isFocused]);
 
   async function handleCancel(id) {
     const response = await api.delete(`/appointments/${id}`);
@@ -64,6 +65,5 @@ Dashboard.navigationOptions = {
   ),
 };
 
-Dashboard.propTypes = {
-  tintColor: PropTypes.string.isRequired,
-};
+// withNavigationFocus para saber se a tela foi acessada injeta o isFocused no props
+export default withNavigationFocus(Dashboard);

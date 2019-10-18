@@ -1,7 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import {Icon} from 'native-base';
-import PropTypes from 'prop-types';
 
 import {updateProfileRequest} from '~/store/modules/user/actions';
 import {signOut} from '~/store/modules/auth/actions';
@@ -136,9 +135,4 @@ Profile.navigationOptions = {
       style={{fontSize: 20, color: tintColor}}
     />
   ),
-};
-
-// TODO - para pegar a props dentro do navigationOptions tem que fazer diferente - pesquisar e refatorar
-Profile.propTypes = {
-  tintColor: PropTypes.string.isRequired,
 };

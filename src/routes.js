@@ -58,6 +58,7 @@ export default (isSigned = false) =>
             Profile,
           },
           {
+            resetOnBlur: true, // resetar sempre que sair da rota - para resetar o agendamento
             tabBarOptions: {
               keyboardHidesTabBar: true,
               activeTintColor: '#fff',
