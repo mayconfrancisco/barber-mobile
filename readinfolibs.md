@@ -139,3 +139,11 @@ ANDROID - add linhas ao gradle e import no MainApplication.java - veja mais em h
 
 
 yarn add react-native-webview
+
+
+
+
+$#$#$#$#$#$<br/>
+Para executar o android via linha de comando - passa o caminho do emulador normalmente o caminhdo do SDK - o $ANDROID_HOME é a minha variavel de ambiente no macOS:<br/>
+~/Android/Sdk/emulator/emulator -avd Pixel_2_API_29<br/>
+$ANDROID_HOME/emulator/emulator -avd Pixel_2_API_28<br/>
