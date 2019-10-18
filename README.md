@@ -3,7 +3,7 @@
 App mobile Android e iOS em React Native da aplicação de agendamento para barbearias - O App é focado no agendamento de horários por parte do cliente.
 Projeto desenvolvido no Bootcamp da Rocketseat
 
-<!-- ![Imagem do App barber Mobile Rodando](https://raw.githubusercontent.com/mayconfrancisco/barber-mobile/master/imgs/barber-mobile.gif) -->
+![Imagem do App barber Mobile Rodando](https://raw.githubusercontent.com/mayconfrancisco/barber-mobile/master/imgs/barber-mobile.gif)
 
 
 ### Para rodar o projeto:
