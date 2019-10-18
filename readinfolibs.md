@@ -126,6 +126,12 @@ yarn add axios <br/>
 // iOS - funciona no localhost
 
 
+yarn add @react-native-community/datetimepicker <br />
+IOS - pod install <br />
+ANDROID - add linhas ao gradle e import no MainApplication.java - veja mais em https://github.com/react-native-community/react-native-datetimepicker
+
+
+
 
 
 @@@@@@@@@@@@@@@@@@
