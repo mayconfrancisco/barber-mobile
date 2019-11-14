@@ -58,7 +58,7 @@ criar/configurar jsconfig.json <br/>
   }
 }
 
-yarn add styles-component
+yarn add styled-components
 
 yarn add prop-types
 
